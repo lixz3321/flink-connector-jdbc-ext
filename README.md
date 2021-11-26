@@ -26,7 +26,13 @@ maven引入
   <version>1.14.0</version>  
 </dependency> 
 ```
-####  3、demo
+####  3、驱动兼容
+
+ 数据库  | 驱动 | 版本  
+ ---- | ----- | -----
+ Clickhouse  | clickhouse-jdbc | 0.2.4
+ Phoenix  | phoenix-core | 5.0.0-HBase-2.0
+####  4、示例
 
 ```
 StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
