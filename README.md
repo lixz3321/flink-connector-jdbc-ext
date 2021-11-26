@@ -32,7 +32,7 @@ tEnv.executeSql("create table test2(" +
         "'connector' = 'jdbc'," +
         "'url' = 'jdbc:clickhouse://192.168.78.17:8123/default'," +
         "'table-name' = 'test2')");
-        tEnv.executeSql("select * from test2").print();
+tEnv.executeSql("select * from test2").print();
 ```
                 
                 
