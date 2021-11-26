@@ -18,7 +18,24 @@ maven引入
   <version>1.14.0</version>  
 </dependency> 
 ```
+####  3、demo
 
+```
+StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+EnvironmentSettings bsSettings = EnvironmentSettings.newInstance().useBlinkPlanner().inStreamingMode().build();
+StreamTableEnvironment tEnv = StreamTableEnvironment.create(env, bsSettings);
+//加载clickhouse表
+tEnv.executeSql("create table test2(" +
+        "`id` INT," +
+        "`name` STRING" +
+        ")WITH(" +
+        "'connector' = 'jdbc'," +
+        "'url' = 'jdbc:clickhouse://192.168.78.17:8123/default'," +
+        "'table-name' = 'test2')");
+        tEnv.executeSql("select * from test2").print();
+```
+                
+                
 ###### 有问题一起交流，微信：z1224576376
 
  
