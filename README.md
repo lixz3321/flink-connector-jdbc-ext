@@ -1,12 +1,13 @@
 #   flink-connector-jdbc-ext
-这是一个扩展的flink-connector-jdbc，相比于官方连接器该版本实现了更多的数据库支持，
-现在支持的数据库有： 
+这是一个扩展的flink-connector-jdbc，相比于官方连接器该版本实现了更多的数据库连接支持，现在支持的数据库有:  
+```
 MySql
 PostgreSQL
 Derby
 ClickHouse
 Phonix
-后续我将继续改造以支持更多的jdbc连接。
+```
+后面会继续改造以支持更多的jdbc连接。
 
 
 # 使用方法
