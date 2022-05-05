@@ -5,7 +5,7 @@ MySql
 PostgreSQL
 Derby
 ClickHouse
-Phonix
+Phoenix
 ```
 后面会继续改造以支持更多的jdbc连接。
 
